@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+<title>ABM de Personas</title>
+</head>
+<body>
+
+<section id=”Formulario”>
+<h1>Ejemplo Pagina con Formulario</h1>
+
+<form action="GestionarPersona" method="post">
+ 
+    <label>RUC:</label><br/>
+    <input type="text" name="ruc" value="" />
+    <br/>
+    <label>Razon Social:</label><br/>
+    <input type="text" name="razon" value="" size="50" maxlength="70"/>
+    <br/>
+    <label>Contraseña:</label><br/>
+    <input type="password" name="password" value="" maxlength="10" />
+    <br/>
+    <br/>
+    <label>Observaciones:</label><br/>
+    <textarea rows="4" cols="35" name="textarea1"></textarea>
+     <br/>
+     <label>Tipos:</label><br/>
+    <input type="checkbox" name="check1[]" value="1">Persona Juridica  
+    <input type="checkbox" name="check1[]" value="2">Gran Contribuyente
+    <br/>
+     <br/>
+      <label>Sexo:</label><br/>
+    <select name="opt1">
+  <option value="M">Masculino</option>
+  <option value="F">Femenino</option>
+</select>
+  <br/>
+  <br/>
+   <label>Actividades Economica(s):</label><br/>
+  <select multiple name="mult1[]">
+  <option value="Informatica">Informatica</option>
+  <option value="Contabilidad">Contabilidad</option>
+  <option value="Agronomia">Agronomia</option>
+</select>
+<br/>
+<button type="reset">Reset</button>
+<button type="submit">Aceptar</button>
+<button type="button">Cancelar</button>
+<br/>
+</form>
+
+
+</section>
+</body>
+</html>

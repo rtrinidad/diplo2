@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ejemplo Diplomado Módulo Web</title>
+</head>
+<body>
+	<h2>
+	 <font color="FF0000">Ejemplo Pagina con Formulario</font>
+	</h2>
+	<hr color="green" size="2">
+	<form action="ProcesarPersonaServlet" method="post">
+		Ruc:
+		<input type="text" name="ruc" id="ruc" value="8004020" readonly="readonly">
+		<br>
+		Razón Social:
+		<input type="text" name="razonSocial" id="razonSocial" size="50" maxlength="80">
+		<br>
+		Password:
+		<input type="password" name="pass" id="pass" size="20" maxlength="15">
+		<input type="reset" value="Reset"/>
+		<input type="submit" name="botonsubmit" value="Aceptar"/> //Con submit va al servidor
+		<input type="submit" name="botonsubmit" value="Cancelar"/>
+		<textarea cols="20" rows="3" name="Comentarios">Comentarios...
+		</textarea>
+		Persona Juridica:
+		<input type="checkbox" name="personaJuridica" id="personaJuridica" checked="checked">
+		Gran Contribuyente:
+		<input type="checkbox" name="granContribuyente" id="granContribuyente" disabled="disabled">
+		
+		Sexo:<br>
+		<select name="sexo" id="sexo">
+		<option value="F">Femenino</option>
+		<option value="M">Masculino</option>
+		</select>
+		<br>
+		Actividad(es) Economica(s):
+		<br>
+		<select name="activEconomica" id="activEconomica" multiple="multiple">
+		<option value="1">Informatica</option>
+		<option value="2">Contabilidad</option>
+		<option value="3">Agronomia</option>
+		</select>
+		Tipo de Iva:
+		<br>
+		<input type="radio" name="tipoIva" id="tipoIva" value="1">IVA 5%<br>
+		<input type="radio" name="tipoIva" id="tipoIva" value="2">IVA 10%<br>
+	</form>	
+</body>
+</html>	
